@@ -3,16 +3,13 @@ package dao.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import dao.UserDao;
 import domain.User;
 
 public class UserArrayListDao implements UserDao {
 	private List<User> users;
 
-	@Autowired
-	public void UserArrayListDao() {
+	public UserArrayListDao() {
 		users = new ArrayList<User>();
 	}
 
